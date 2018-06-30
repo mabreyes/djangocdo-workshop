@@ -4,4 +4,6 @@ Here's the preview of what I made during the workshop. We created a simple blog 
 
 ![Website preview](preview/preview.png "Website preview")
 
+![Blog details preview](preview/post-preview.png "Blog details preview")
+
 Big thanks to [Django Girls CDO](https://djangogirls.org/cagayandeoro/) for the opportunity.
