@@ -24,4 +24,4 @@ $ python3 manage.py collectstatic
 $ python3 manage.py runserver
 ```
 
-Big thanks to [Django Girls CDO](https://djangogirls.org/cagayandeoro/) for this wonderful opportunity.
+Big super thanks to [Django Girls CDO](https://djangogirls.org/cagayandeoro/) for this wonderful opportunity.
