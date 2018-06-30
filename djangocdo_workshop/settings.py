@@ -78,10 +78,16 @@ WSGI_APPLICATION = 'djangocdo_workshop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
     'default': dj_database_url.config(
-        default=config(
-            'postgres://oqksqcxzfxeksj:716bbcc2d994e986250bc43bd162cb9b46ad8b8c4dd4a4cf7977bdf1510142ed@ec2-23-21-246-25.compute-1.amazonaws.com:5432/db2dac1q4fnm5h')
+        default='sqlite:////{0}'.format(os.path.join(BASE_DIR, 'db.sqlite3'))
     )
 }
 
