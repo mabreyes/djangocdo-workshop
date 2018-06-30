@@ -11,7 +11,7 @@ Here's the preview of what I made during the workshop. We created a simple blog 
 ### New blog post preview:
 ![New blog post preview](preview/new-post-preview.png "New blog post preview")
 
-### Edit blog post preview
+### Edit blog post preview:
 ![Edit blog post preview](preview/edit-post-preview.png "Edit blog post preview")
 
 # Usage
