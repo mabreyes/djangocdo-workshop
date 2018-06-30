@@ -23,7 +23,7 @@
             {% if user.is_authenticated %}
             <a class="blog-page-link" href="{% url 'post_new' %}">Create New Post</a>
             {% else %}
-            <a class="blog-page-link" href="https://djangocdo-workshop.herokuapp.com/">Sign-In to Start Posting</a>
+            <a class="blog-page-link" href="/admin">Sign-In to Start Posting</a>
             {% endif %}
         </div>
     </div>
