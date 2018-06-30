@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '58or0hil!)l#4_ls%wm)53#vki=jt47_rqpb)h8!e4i9a$w!bb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = [
     '*'
@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'djangocdo_workshop.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.config(
+        default=config(
+            'postgres://oqksqcxzfxeksj:716bbcc2d994e986250bc43bd162cb9b46ad8b8c4dd4a4cf7977bdf1510142ed@ec2-23-21-246-25.compute-1.amazonaws.com:5432/db2dac1q4fnm5h')
+    )
 }
 
 
