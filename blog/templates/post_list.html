@@ -1,11 +1,12 @@
 {% extends 'base.html' %} {% block content %} {% for post in posts %}
 <div class="post">
     <h1>
-        <a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a>
+        <a style="pointer-events: none; cursor: none;" href="">{{ post.title }}</a>
+        <a class="read-button" href="{% url 'post_detail' pk=post.pk %}">Read Article</a>
     </h1>
     <div class="date">
         Published on {{ post.published_date }}
     </div>
-    <p>{{ post.text|linebreaksbr }}</p>
+    <p style="margin-top: 30px;">{{ post.text|linebreaksbr }}</p>
 </div>
 {% endfor %} {% endblock %}

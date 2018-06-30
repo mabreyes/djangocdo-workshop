@@ -9,6 +9,7 @@
     <title>Django Girls Blog</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
@@ -16,8 +17,10 @@
     <div class="page-header">
         <div class="container">
             <h1>
-                <a href="/">Django Girls Blog</a>
+                <a class="blog-page" href="/">Django Girls Blog</a>
             </h1>
+            <p class="blog-desc">Stories of powerful women turning coffee into code.</p>
+            <a class="blog-page-link" href="">Learn more</a>
         </div>
     </div>
 
@@ -27,7 +30,11 @@
                 {% block content %} {% endblock %}
             </div>
         </div>
+        <footer>
+            &copy; 2018 Django Girls (and boys)
+        </footer>
     </div>
+
 </body>
 
 </html>

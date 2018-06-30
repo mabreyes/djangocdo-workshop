@@ -1,3 +1,62 @@
+body {
+    background: #00334e;
+}
+* {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    background: #00334e;
+    color: #fff;
+}
+
 h1 a {
     color: #FCA205;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    border-bottom: 5px solid #FCA205;
+}
+
+.blog-page {
+    font-size: 2em;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+}
+
+.blog-page-link {
+    text-decoration: none;
+    position: absolute;
+    margin-top: 70px;
+    padding: 1em;
+    color: #fff;
+    font-size: 1.4em;
+    border: 2px solid #FCA205;
+}
+
+.page-header {
+    height: 300px;
+}
+
+.blog-desc {
+    position: absolute;
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+
+.date {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.read-button {
+    float: right;
+    text-decoration: none;
+    padding: 1em;
+    color: #fff;
+    font-size: 0.5em;
+    border: 2px solid #FCA205;
+}
+
+footer {
+    padding: 3em;
+    text-align: center;
 }
