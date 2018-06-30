@@ -60,3 +60,20 @@ footer {
     padding: 3em;
     text-align: center;
 }
+
+input, textarea {
+    background: transparent;
+    border: 2px #FCA205 solid;
+    padding: 1em;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button.save {
+    background: transparent;
+    padding: 1em;
+    color: #fff;
+    font-size: 1.4em;
+    border-radius: 0;
+    border: 2px solid #FCA205;
+}
